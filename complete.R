@@ -11,7 +11,7 @@
 
 complete <- function(directory,id = 1:332) {
         ## Sets the work directory
-        setwd("c:/coursera")
+        setwd("c:/RAGNIMY1/datasciencecoursera")
         ## Creates an empty data frame
         data <- data.frame()
         ## Creates a numeric vector

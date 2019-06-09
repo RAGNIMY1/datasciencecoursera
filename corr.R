@@ -11,7 +11,7 @@
 
 corr <- function(directory,threshold=0) {
         ## Sets the work directory
-        setwd("c:/coursera")
+        setwd("c:/RAGNIMY1/datasciencecoursera")
         ## Creates an empty numeric vector
         vectcor <- vector(mode = "numeric", length = 0)
         ## Creates a list of the files to be read from the directory passed as argument
