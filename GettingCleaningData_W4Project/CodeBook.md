@@ -10,7 +10,7 @@ The obtained dataset has been randomly partitioned into two sets, generating the
 The following files, extracted from the zipped raw dataset, are used in the data transformation process:
 
 FILE NAME | SHORT DESCRIPTION | DIMENSION
---------- | ----------------- | ---------
+:-------- | :---------------- | :--------
 _activity_labels.txt_ | list of activities performed by the subjects | 6 obd. 2 variables (activity code [1..6], activity name [WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING])
 _features.txt_ | labels of the 3-axial linear acceleration and 3-axial angular velocity measurements | 561 obs. 2 variables (feature id, feature name)
 _test/subject_test.txt_ | contains the identification of the subjects for the experiments reported in the test dataset | 2947 obs. 1 variable (subject id)
