@@ -221,7 +221,7 @@ dplyr
    * Convert all variable names to lower case.
    * Make variable names human readable, reflecting the content.
   
-  Therefore:    
+   Therefore:    
    * acc was replaced by accelerometer 
    * gyro was replaced by gyroscope
    * bodybody was replaced by body
