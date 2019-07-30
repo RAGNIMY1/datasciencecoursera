@@ -35,8 +35,8 @@ dplyr
 <table>
   <tbody>
     <tr>
-      <th>FILE NAME</th>
-      <th>DATA FRAME NAME AND STRUCTURE</th>
+      <th align="left">FILE NAME</th>
+      <th align="left">DATA FRAME NAME AND STRUCTURE</th>
     </tr>
     <tr>
       <td>activity_labels.txt</td>
@@ -146,15 +146,32 @@ dplyr
    * subjectid (identification of the subject)
    * actcode (activity code)
    * the measurement of the features that contain the expression "mean()" or "std()"
-   
-     DATA FRAME NAME  |STRUCTURE               
-     ---------------- | --------------------------------------------------------------------------------------
-     TidyData         | 'data.frame':	10299 obs. of  68 variables: (extract below)
-                      | $ subjectid                  : int  2 2 2 2 2 2 2 2 2 2 ...
-                      | $ actcode                    : int  5 5 5 5 5 5 5 5 5 5 ...
-                      | $ tBodyAcc-mean()-X          : num  0.257 0.286 0.275 0.27 0.275 ...
-                      | $ tBodyAcc-mean()-Y          : num  -0.0233 -0.0132 -0.0261 -0.0326 -0.0278 ...
-                      | $ tBodyAcc-mean()-Z          : num  -0.0147 -0.1191 -0.1182 -0.1175 -0.1295 ...
+  		  
+<table>
+  <tbody>
+    <tr>
+      <th align="left">DATA FRAME NAME</th>
+      <th align="left">STRUCTURE</th>
+    </tr>
+    <tr>
+      <td>TidyData</td>
+      <td>Activity
+	  <br>'data.frame':	10299 obs. of  68 variables: (extract below)
+	  $ subjectid                  : int  2 2 2 2 2 2 2 2 2 2 ...
+	  <br>
+      $ actcode                    : int  5 5 5 5 5 5 5 5 5 5 ...
+	  <br>
+      $ tBodyAcc-mean()-X          : num  0.257 0.286 0.275 0.27 0.275 ...
+	  <br>
+      $ tBodyAcc-mean()-Y          : num  -0.0233 -0.0132 -0.0261 -0.0326 -0.0278 ...
+	  <br>
+      $ tBodyAcc-mean()-Z          : num  -0.0147 -0.1191 -0.1182 -0.1175 -0.1295 ...
+	  <br/>
+	  </td>
+    </tr>
+	<tr>
+  </tbody>
+</table>
 
 4. Replace the activity codes by descriptive activity names read from the "activity_labels.txt" (Activity data frame)
 
