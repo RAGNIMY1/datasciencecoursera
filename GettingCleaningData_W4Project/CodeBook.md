@@ -159,7 +159,7 @@ dplyr
     </tr>
 	<tr>
       <td><i>AllData</i></td>
-      <td>|'data.frame':	10299 obs. of  563 variables: (extract below)
+      <td>'data.frame':	10299 obs. of  563 variables: (extract below)
 	  <br>
       $ subjectid                           : int  2 2 2 2 2 2 2 2 2 2 ...
 	  <br>
@@ -196,8 +196,10 @@ dplyr
     <tr>
       <td><i>TidyData</i></td>
       <td><i>Activity</i>
-	  <br>'data.frame':	10299 obs. of  68 variables: (extract below)
-	  $ subjectid                  : int  2 2 2 2 2 2 2 2 2 2 ...
+	  <br>
+     'data.frame':	10299 obs. of  68 variables: (extract below)
+	  <br>
+      $ subjectid                  : int  2 2 2 2 2 2 2 2 2 2 ...
 	  <br>
       $ actcode                    : int  5 5 5 5 5 5 5 5 5 5 ...
 	  <br>
