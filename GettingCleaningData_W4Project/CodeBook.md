@@ -218,8 +218,9 @@ dplyr
 
 5. **Label the data set with descriptive variable names**
    I've applied the following best practices:
-   * Make variable names human readable, reflecting the content
    * Convert all variable names to lower case.
+   * Make variable names human readable, reflecting the content.
+  
   Therefore:    
    * acc was replaced by accelerometer 
    * gyro was replaced by gyroscope
