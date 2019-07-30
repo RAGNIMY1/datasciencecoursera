@@ -44,7 +44,7 @@ dplyr
     </tr>
     <tr>
       <td><i>features.txt</i></td>
-      <td><i>Featuredata</i><br>'data.frame':	561 obs. of  2 variables: <br>$ featureid: int  1 2 3 4 5 6 7 8 9 10 ...<br>$ feature  : Factor w/ 477 levels "angle(tBodyAccJerkMean),gravityMean)",..: 243 244 245 250 251 252 237 238 239 240 ...	</br></td>
+      <td><i>Feature</i><br>'data.frame':	561 obs. of  2 variables: <br>$ featureid: int  1 2 3 4 5 6 7 8 9 10 ...<br>$ feature  : Factor w/ 477 levels "angle(tBodyAccJerkMean),gravityMean)",..: 243 244 245 250 251 252 237 238 239 240 ...	</br></td>
     </tr>
     <tr>
       <td><i>test/subject_test.txt</i></td>
