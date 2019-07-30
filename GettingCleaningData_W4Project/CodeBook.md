@@ -1,5 +1,5 @@
 # GettingCleaningData_W4Project
-__CODE BOOK__
+# __CODE BOOK__
 
 # RAW DATA
 The data used for the project is collected from the sensor signals (accelerometer and gyroscope) of the Samsung Galaxy S smartphone carried by 30 volunteers (aka subjects) performing activities like walking, laying, staying....
@@ -27,7 +27,7 @@ dplyr
 
 ## PROCESS STEPS
 
-1. Preparation
+1. **Preparation**
  * Set the working environment
  * Download and unzip the raw datafile
  * Read all the files used in the transformation process and load the data into single data frames
@@ -114,7 +114,7 @@ dplyr
 </table>
 
 						
-2. Merge the single dataframes into one dataframe combining the subject id, the activity id and all the measurements of all the features. This is done in three steps:
+2. **Merge the single dataframes into one dataframe combining the subject id, the activity id and all the measurements of all the features.** This is done in three steps:
    * Merge the Subject Test and Train datasets by row into the SubjectAll data frame
    * Merge the Feature Test and Train datasets by row into the FeatureAll data frame
    * Merge the Activity Test and Train datasets by row into the ActivityAll data frame
@@ -181,7 +181,7 @@ dplyr
 </table>
   				  
 
-3. Extract only the measurements on the mean and standard deviation for each measurement
+3. **Extract only the measurements on the mean and standard deviation for each measurement.**
    The TidyData data frame is a subset of the dataset AllData and contains the variables:
    * subjectid (identification of the subject)
    * actcode (activity code)
@@ -213,9 +213,9 @@ dplyr
   </tbody>
 </table>
 
-4. Replace the activity codes by descriptive activity names read from the "activity_labels.txt" (Activity data frame)
+4. **Replace the activity codes by descriptive activity names read from the "activity_labels.txt" (Activity data frame)**
 
-5. Label the data set with descriptive variable names
+5. **Label the data set with descriptive variable names**
    I've applied the following best practices:
    * Make variable names human readable, reflecting the content
    * Convert all variable names to lower case.
