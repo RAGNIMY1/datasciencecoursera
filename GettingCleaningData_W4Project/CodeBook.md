@@ -40,7 +40,7 @@ dplyr
     </tr>
     <tr>
       <td>activity_labels.txt</td>
-      <td>Activity<br>6 obs. of  2 variables: <br>$ activity: Factor w/ 6 levels "LAYING","SITTING",..: 4 6 5 2 3 1<br/><br/></td>
+      <td>Activity<br>6 obs. of  2 variables: <br>$ activity: Factor w/ 6 levels "LAYING","SITTING",..: 4 6 5 2 3 1<br/></td>
     </tr>
 	<tr>
       <td>features.txt</td>
@@ -50,12 +50,13 @@ dplyr
       <td>test/subject_test.txt</td>
       <td>SubjectTest<br>'data.frame':	2947 obs. of  1 variable:<br>$ subjectid: int  2 2 2 2 2 2 2 2 2 2 ...  <br/></td>
     </tr>
+	<tr>
+	 <td>subject_train.txt<td/>
+	 <td>SubjectTrain<br>'data.frame': 7352 obs. of  1 variable:<br>$ subjectid: int  1 1 1 1 1 1 1 1 1 1 ... <br/><td/>
+	<tr/>
   </tbody>
 </table>
-   
-     subject_train.txt       |SubjectTrain
-                             |'data.frame':	7352 obs. of  1 variable:
-                             |$ subjectid: int  1 1 1 1 1 1 1 1 1 1 ...	
+ 
      X_test.txt              |FeatureTest
                              |'data.frame':	2947 obs. of  561 variables: (extract below)
                              |$ tBodyAcc-mean()-X                   : num  0.257 0.286 0.275 0.27 0.275 ...
