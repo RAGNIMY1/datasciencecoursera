@@ -55,7 +55,7 @@ dplyr
 	 <td>SubjectTrain<br>'data.frame': 7352 obs. of  1 variable:<br>$ subjectid: int  1 1 1 1 1 1 1 1 1 1 ... </br></td>
 	</tr>
 	<tr>
-	 <td>test/X_test</td>
+	 <td>test/X_test.txt</td>
 	 <td>FeatureTest
 	 <br>
 	 'data.frame':	2947 obs. of  561 variables: (extract below)
@@ -76,7 +76,7 @@ dplyr
 	 <td>train/X_train.txt</td>
 	 <td>FeatureTrain
 	 <br>
-	 data.frame':	7352 obs. of  561 variables: (extract below)
+	 'data.frame':	7352 obs. of  561 variables: (extract below)
 	 <br>
      $ tBodyAcc-mean()-X                   : num  0.289 0.278 0.28 0.279 0.277 ...
 	 <br>
@@ -119,27 +119,67 @@ dplyr
    * Merge the Feature Test and Train datasets by row into the FeatureAll data frame
    * Merge the Activity Test and Train datasets by row into the ActivityAll data frame
    * Merge the SubjectAll, FeatureAll and ActivityAll datasets by column into the AllData data frame
-   
-     DATA FRAME NAME  |STRUCTURE               
-     ---------------- | --------------------------------------------------------------------------------------
-     SubjectAll       |'data.frame':	10299 obs. of  1 variable:
-                      |$ subjectid: int  2 2 2 2 2 2 2 2 2 2 ...				
-     FeatureAll       |'data.frame':	10299 obs. of  561 variables: (extract below)
-                      |$ tBodyAcc-mean()-X                   : num  0.257 0.286 0.275 0.27 0.275 ...
-                      |$ tBodyAcc-mean()-Y                   : num  -0.0233 -0.0132 -0.0261 -0.0326 -0.0278 ...
-                      |$ tBodyAcc-mean()-Z                   : num  -0.0147 -0.1191 -0.1182 -0.1175 -0.1295 ...
-                      |$ tBodyAcc-std()-X                    : num  -0.938 -0.975 -0.994 -0.995 -0.994 ...
-                      |$ tBodyAcc-std()-Y                    : num  -0.92 -0.967 -0.97 -0.973 -0.967 ...
-     ActivityAll      |'data.frame':	10299 obs. of  1 variable:
-                      |$ actcode: int  5 5 5 5 5 5 5 5 5 5 ...
-	 AllData          |'data.frame':	10299 obs. of  563 variables:
-                      |$ subjectid                           : int  2 2 2 2 2 2 2 2 2 2 ...
-                      |$ actcode                             : int  5 5 5 5 5 5 5 5 5 5 ...
-                      |$ tBodyAcc-mean()-X                   : num  0.257 0.286 0.275 0.27 0.275 ...
-                      |$ tBodyAcc-mean()-Y                   : num  -0.0233 -0.0132 -0.0261 -0.0326 -0.0278 ...
-                      |$ tBodyAcc-mean()-Z                   : num  -0.0147 -0.1191 -0.1182 -0.1175 -0.1295 ...
-                      |$ tBodyAcc-std()-X                    : num  -0.938 -0.975 -0.994 -0.995 -0.994 ...
-                      |$ tBodyAcc-std()-Y                    : num  -0.92 -0.967 -0.97 -0.973 -0.967 ...			  
+
+<table>
+  <tbody>
+    <tr>
+      <th align="left">DATA FRAME NAME</th>
+      <th align="left">STRUCTURE</th>
+    </tr>
+    <tr>
+      <td>SubjectAll</td>
+      <td>'data.frame':	10299 obs. of  1 variable:
+	  <br>$ subjectid: int  2 2 2 2 2 2 2 2 2 2 ...	
+	  <br/>
+	  </td>
+    </tr>
+	<tr>
+      <td>FeatureAll</td>
+      <td>'data.frame':	10299 obs. of  561 variables: (extract below)
+	  <br>
+	  $ tBodyAcc-mean()-X                   : num  0.257 0.286 0.275 0.27 0.275 ...
+	  <br>
+      $ tBodyAcc-mean()-Y                   : num  -0.0233 -0.0132 -0.0261 -0.0326 -0.0278 ...
+	  <br>
+      $ tBodyAcc-mean()-Z                   : num  -0.0147 -0.1191 -0.1182 -0.1175 -0.1295 ...
+	  <br>
+      $ tBodyAcc-std()-X                    : num  -0.938 -0.975 -0.994 -0.995 -0.994 ...
+	  <br>
+      $ tBodyAcc-std()-Y                    : num  -0.92 -0.967 -0.97 -0.973 -0.967 ...
+	  <br/>
+	  </td>
+    </tr>
+	<tr>
+      <td>ActivityAll</td>
+      <td>'data.frame':	10299 obs. of  1 variable:
+	  <br>
+      $ actcode: int  5 5 5 5 5 5 5 5 5 5 ...
+	  <br/>
+	  </td>
+    </tr>
+	<tr>
+      <td>AllData</td>
+      <td>|'data.frame':	10299 obs. of  563 variables: (extract below)
+	  <br>
+      $ subjectid                           : int  2 2 2 2 2 2 2 2 2 2 ...
+	  <br>
+      $ actcode                             : int  5 5 5 5 5 5 5 5 5 5 ...
+	  <br>
+      $ tBodyAcc-mean()-X                   : num  0.257 0.286 0.275 0.27 0.275 ...
+	  <br>
+      $ tBodyAcc-mean()-Y                   : num  -0.0233 -0.0132 -0.0261 -0.0326 -0.0278 ...
+	  <br>
+      $ tBodyAcc-mean()-Z                   : num  -0.0147 -0.1191 -0.1182 -0.1175 -0.1295 ...
+	  <br>
+      $ tBodyAcc-std()-X                    : num  -0.938 -0.975 -0.994 -0.995 -0.994 ...
+	  <br>
+      $ tBodyAcc-std()-Y                    : num  -0.92 -0.967 -0.97 -0.973 -0.967 ...	
+	  <br/>
+	  </td>
+    </tr>
+  </tbody>
+</table>
+  				  
 
 3. Extract only the measurements on the mean and standard deviation for each measurement
    The TidyData data frame is a subset of the dataset AllData and contains the variables:
