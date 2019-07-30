@@ -51,7 +51,7 @@ dplyr
       <td>SubjectTest<br>'data.frame':	2947 obs. of  1 variable:<br>$ subjectid: int  2 2 2 2 2 2 2 2 2 2 ...  <br/></td>
     </tr>
 	<tr>
-	 <td>subject_train.txt<td/>
+	 <td>subject_train.txt</td>
 	 <td>SubjectTrain<br>'data.frame': 7352 obs. of  1 variable:<br>$ subjectid: int  1 1 1 1 1 1 1 1 1 1 ... <br/><td/>
 	<tr/>
   </tbody>
