@@ -11,14 +11,14 @@ The following files, extracted from the zipped raw dataset, are used in the data
 
 FILE NAME | SHORT DESCRIPTION | DIMENSION
 --------- | ----------------- | ---------
-activity_labels.txt | list of activities performed by the subjects | 6 obd. 2 variables (activity code [1..6], activity name [WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING])
-features.txt | labels of the 3-axial linear acceleration and 3-axial angular velocity measurements | 561 obs. 2 variables (feature id, feature name)
-test/subject_test.txt | contains the identification of the subjects for the experiments reported in the test dataset | 2947 obs. 1 variable (subject id)
-train/subject_train.txt | contains the identification of the subjects for the experiments reported in the train dataset| 7352 obs. 1 variable (subject id)
-test/X_test.txt | contains the measurements by feature for the experiments reported in the test dataset | 2947 obs. 561 variables (1 variable by feature)
-train/X_train.txt | contains the measurements by feature for the experiments reported in the train dataset | 7352 obs. 561 variables (1 variable by feature)
-test/y_test.txt | contains the activity list for the experiments reported in the test dataset | 2947 obs. 1 variable (activity code)     
-train/y_train.txt | contains the activity list for the experiments reported in the train dataset | 7352 obs. 1 variable (activity code)    
+_activity_labels.txt_ | list of activities performed by the subjects | 6 obd. 2 variables (activity code [1..6], activity name [WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING])
+_features.txt_ | labels of the 3-axial linear acceleration and 3-axial angular velocity measurements | 561 obs. 2 variables (feature id, feature name)
+_test/subject_test.txt_ | contains the identification of the subjects for the experiments reported in the test dataset | 2947 obs. 1 variable (subject id)
+_train/subject_train.txt_ | contains the identification of the subjects for the experiments reported in the train dataset| 7352 obs. 1 variable (subject id)
+_test/X_test.txt_ | contains the measurements by feature for the experiments reported in the test dataset | 2947 obs. 561 variables (1 variable by feature)
+_train/X_train.txt_ | contains the measurements by feature for the experiments reported in the train dataset | 7352 obs. 561 variables (1 variable by feature)
+_test/y_test.txt_ | contains the activity list for the experiments reported in the test dataset | 2947 obs. 1 variable (activity code)   
+_train/y_train.txt_ | contains the activity list for the experiments reported in the train dataset | 7352 obs. 1 variable (activity code)    
 
 
 # DATA TRANSFORMATION
@@ -39,8 +39,8 @@ dplyr
       <th align="left">DATA FRAME NAME AND STRUCTURE</th>
     </tr>
     <tr>
-      <td>activity_labels.txt</td>
-      <td>Activity<br>6 obs. of  2 variables: <br>$ activity: Factor w/ 6 levels "LAYING","SITTING",..: 4 6 5 2 3 1<br/></td>
+      <td><i>activity_labels.txt</i></td>
+      <td><i>Activity</i><br>6 obs. of  2 variables: <br>$ activity: Factor w/ 6 levels "LAYING","SITTING",..: 4 6 5 2 3 1<br/></td>
     </tr>
 	<tr>
       <td>features.txt</td>
