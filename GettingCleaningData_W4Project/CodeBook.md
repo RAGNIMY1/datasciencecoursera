@@ -12,13 +12,13 @@ The following files, extracted from the zipped raw dataset, are used in the data
 FILE NAME | SHORT DESCRIPTION | DIMENSION
 --------- | ----------------- | ---------
 activity_labels.txt | list of activities performed by the subjects | 6 obd. 2 variables (activity code [1..6], activity name [WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING])
-features.txt | labels of the 3-axial linear acceleration and 3-axial angular velocity measurements          | 561 obs. 2 variables (feature id, feature name)
-test/subject_test.txt   | contains the identification of the subjects for the experiments reported in the test dataset | 2947 obs. 1 variable (subject id)
+features.txt | labels of the 3-axial linear acceleration and 3-axial angular velocity measurements | 561 obs. 2 variables (feature id, feature name)
+test/subject_test.txt | contains the identification of the subjects for the experiments reported in the test dataset | 2947 obs. 1 variable (subject id)
 train/subject_train.txt | contains the identification of the subjects for the experiments reported in the train dataset| 7352 obs. 1 variable (subject id)
-test/X_test.txt         | contains the measurements by feature for the experiments reported in the test dataset        | 2947 obs. 561 variables (1 variable by feature)
-train/X_train.txt       | contains the measurements by feature for the experiments reported in the train dataset       | 7352 obs. 561 variables (1 variable by feature)
-test/y_test.txt         | contains the activity list for the experiments reported in the test dataset                  | 2947 obs. 1 variable (activity code)     
-train/y_train.txt       | contains the activity list for the experiments reported in the train dataset                 | 7352 obs. 1 variable (activity code)    
+test/X_test.txt | contains the measurements by feature for the experiments reported in the test dataset | 2947 obs. 561 variables (1 variable by feature)
+train/X_train.txt | contains the measurements by feature for the experiments reported in the train dataset | 7352 obs. 561 variables (1 variable by feature)
+test/y_test.txt | contains the activity list for the experiments reported in the test dataset | 2947 obs. 1 variable (activity code)     
+train/y_train.txt | contains the activity list for the experiments reported in the train dataset | 7352 obs. 1 variable (activity code)    
 
 
 # DATA TRANSFORMATION
@@ -32,7 +32,7 @@ dplyr
  * Download and unzip the raw datafile
  * Read all the files used in the transformation process and load the data into single data frames
  
- <table>
+<table>
   <tbody>
     <tr>
       <th>FILE NAME</th>
@@ -44,39 +44,75 @@ dplyr
     </tr>
 	<tr>
       <td>features.txt</td>
-      <td>Featuredata<br>'data.frame':	561 obs. of  2 variables: <br>$ featureid: int  1 2 3 4 5 6 7 8 9 10 ...<br>$ feature  : Factor w/ 477 levels "angle(tBodyAccJerkMean),gravityMean)",..: 243 244 245 250 251 252 237 238 239 240 ...	<br/></td>
+      <td>Featuredata<br>'data.frame':	561 obs. of  2 variables: <br>$ featureid: int  1 2 3 4 5 6 7 8 9 10 ...<br>$ feature  : Factor w/ 477 levels "angle(tBodyAccJerkMean),gravityMean)",..: 243 244 245 250 251 252 237 238 239 240 ...	</br></td>
     </tr>
     <tr>
       <td>test/subject_test.txt</td>
-      <td>SubjectTest<br>'data.frame':	2947 obs. of  1 variable:<br>$ subjectid: int  2 2 2 2 2 2 2 2 2 2 ...  <br/></td>
+      <td>SubjectTest<br>'data.frame':	2947 obs. of  1 variable:<br>$ subjectid: int  2 2 2 2 2 2 2 2 2 2 ...  </br></td>
     </tr>
 	<tr>
-	 <td>subject_train.txt</td>
-	 <td>SubjectTrain<br>'data.frame': 7352 obs. of  1 variable:<br>$ subjectid: int  1 1 1 1 1 1 1 1 1 1 ... <br/><td/>
-	<tr/>
+	 <td>train/subject_train.txt</td>
+	 <td>SubjectTrain<br>'data.frame': 7352 obs. of  1 variable:<br>$ subjectid: int  1 1 1 1 1 1 1 1 1 1 ... </br></td>
+	</tr>
+	<tr>
+	 <td>test/X_test</td>
+	 <td>FeatureTest
+	 <br>
+	 'data.frame':	2947 obs. of  561 variables: (extract below)
+	 <br>
+	 $ tBodyAcc-mean()-X                   : num  0.257 0.286 0.275 0.27 0.275 ...
+	 <br>
+     $ tBodyAcc-mean()-Y                   : num  -0.0233 -0.0132 -0.0261 -0.0326 -0.0278 ...
+	 <br>
+     $ tBodyAcc-mean()-Z                   : num  -0.0147 -0.1191 -0.1182 -0.1175 -0.1295 ...
+	 <br>
+     $ tBodyAcc-std()-X                    : num  -0.938 -0.975 -0.994 -0.995 -0.994 ...
+	 <br>
+     $ tBodyAcc-std()-Y                    : num  -0.92 -0.967 -0.97 -0.973 -0.967 ...
+	 </br>
+	 </td>
+	</tr>
+	<tr>
+	 <td>train/X_train.txt</td>
+	 <td>FeatureTrain
+	 <br>
+	 data.frame':	7352 obs. of  561 variables: (extract below)
+	 <br>
+     $ tBodyAcc-mean()-X                   : num  0.289 0.278 0.28 0.279 0.277 ...
+	 <br>
+     $ tBodyAcc-mean()-Y                   : num  -0.0203 -0.0164 -0.0195 -0.0262 -0.0166 ...
+	 <br>
+     $ tBodyAcc-mean()-Z                   : num  -0.133 -0.124 -0.113 -0.123 -0.115 ...
+	 <br>
+     $ tBodyAcc-std()-X                    : num  -0.995 -0.998 -0.995 -0.996 -0.998 ...
+	 <br>
+     $ tBodyAcc-std()-Y                    : num  -0.983 -0.975 -0.967 -0.983 -0.981 ...
+	 </br>
+	 </td>
+	</tr>
+	<tr>
+	 <td>test/y_test.txt</td>
+	 <td>ActivityTest
+	 <br>
+	 'data.frame':	2947 obs. of  1 variable:
+	 <br>
+     $ actcode: int  5 5 5 5 5 5 5 5 5 5 ...
+	 </br>
+	 </td>
+	</tr>
+	<tr>
+	 <td>train/y_train.txt</td>
+	 <td>ActivityTrain
+	 <br>
+	 'data.frame':	7352 obs. of  1 variable:
+	 <br>
+     $ actcode: int  5 5 5 5 5 5 5 5 5 5 ...
+	 </br>
+	 </td>
+	</tr>
   </tbody>
 </table>
- 
-     X_test.txt              |FeatureTest
-                             |'data.frame':	2947 obs. of  561 variables: (extract below)
-                             |$ tBodyAcc-mean()-X                   : num  0.257 0.286 0.275 0.27 0.275 ...
-                             |$ tBodyAcc-mean()-Y                   : num  -0.0233 -0.0132 -0.0261 -0.0326 -0.0278 ...
-                             |$ tBodyAcc-mean()-Z                   : num  -0.0147 -0.1191 -0.1182 -0.1175 -0.1295 ...
-                             |$ tBodyAcc-std()-X                    : num  -0.938 -0.975 -0.994 -0.995 -0.994 ...
-                             |$ tBodyAcc-std()-Y                    : num  -0.92 -0.967 -0.97 -0.973 -0.967 ...
-     X_train.txt             |FeatureTrain
-                             |data.frame':	7352 obs. of  561 variables: (extract below)
-                             |$ tBodyAcc-mean()-X                   : num  0.289 0.278 0.28 0.279 0.277 ...
-                             |$ tBodyAcc-mean()-Y                   : num  -0.0203 -0.0164 -0.0195 -0.0262 -0.0166 ...
-                             |$ tBodyAcc-mean()-Z                   : num  -0.133 -0.124 -0.113 -0.123 -0.115 ...
-                             |$ tBodyAcc-std()-X                    : num  -0.995 -0.998 -0.995 -0.996 -0.998 ...
-                             |$ tBodyAcc-std()-Y                    : num  -0.983 -0.975 -0.967 -0.983 -0.981 ...
-     y_test.txt              |ActivityTest
-                             |'data.frame':	2947 obs. of  1 variable:
-                             |$ actcode: int  5 5 5 5 5 5 5 5 5 5 ...
-     y_train.txt             |ActivityTrain
-                             |'data.frame':	7352 obs. of  1 variable:
-                             |$ actcode: int  5 5 5 5 5 5 5 5 5 5 ...
+
 						
 2. Merge the single dataframes into one dataframe combining the subject id, the activity id and all the measurements of all the features. This is done in three steps:
    * Merge the Subject Test and Train datasets by row into the SubjectAll data frame
@@ -143,15 +179,15 @@ dplyr
 
 # TIDY DATASET STRUCTURE
   The output file has 180 rows and 68 columns.
-  Column 1      | subjectid = the identification of the test subject
+  * Column 1 : subjectid = the identification of the test subject
                 |             values: 1..30
-  Column 2      | activity =  the type of activity performed when the corresponding measurements were taken 
+  * Column 2 : activity =  the type of activity performed when the corresponding measurements were taken 
                 |             values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-  Columns 3:68  | the measurement of the selected features
-				| 	timebodyaccelerometer-mean-x
-				| 	timebodyaccelerometer-mean-y
-				| 	timebodyaccelerometer-mean-z
-				| 	timegravityaccelerometer-mean-x
+  * Columns 3..68 : the measurement of the selected features
+	* timebodyaccelerometer-mean-x
+	* timebodyaccelerometer-mean-y
+	* timebodyaccelerometer-mean-z
+	* timegravityaccelerometer-mean-x
 				| 	timegravityaccelerometer-mean-y
 				| 	timegravityaccelerometer-mean-z
 				| 	timebodyaccelerometerjerk-mean-x
