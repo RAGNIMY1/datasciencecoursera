@@ -42,21 +42,21 @@ dplyr
       <td><i>activity_labels.txt</i></td>
       <td><i>Activity</i><br>6 obs. of  2 variables: <br>$ activity: Factor w/ 6 levels "LAYING","SITTING",..: 4 6 5 2 3 1<br/></td>
     </tr>
-	<tr>
-      <td>features.txt</td>
-      <td>Featuredata<br>'data.frame':	561 obs. of  2 variables: <br>$ featureid: int  1 2 3 4 5 6 7 8 9 10 ...<br>$ feature  : Factor w/ 477 levels "angle(tBodyAccJerkMean),gravityMean)",..: 243 244 245 250 251 252 237 238 239 240 ...	</br></td>
+    <tr>
+      <td><i>features.txt</i></td>
+      <td><i>Featuredata</i><br>'data.frame':	561 obs. of  2 variables: <br>$ featureid: int  1 2 3 4 5 6 7 8 9 10 ...<br>$ feature  : Factor w/ 477 levels "angle(tBodyAccJerkMean),gravityMean)",..: 243 244 245 250 251 252 237 238 239 240 ...	</br></td>
     </tr>
     <tr>
-      <td>test/subject_test.txt</td>
-      <td>SubjectTest<br>'data.frame':	2947 obs. of  1 variable:<br>$ subjectid: int  2 2 2 2 2 2 2 2 2 2 ...  </br></td>
+      <td><i>test/subject_test.txt</i></td>
+      <td><i>SubjectTest</i><br>'data.frame':	2947 obs. of  1 variable:<br>$ subjectid: int  2 2 2 2 2 2 2 2 2 2 ...  </br></td>
     </tr>
 	<tr>
-	 <td>train/subject_train.txt</td>
-	 <td>SubjectTrain<br>'data.frame': 7352 obs. of  1 variable:<br>$ subjectid: int  1 1 1 1 1 1 1 1 1 1 ... </br></td>
+	 <td><i>train/subject_train.txt</i></td>
+	 <td><i>SubjectTrain</i><br>'data.frame': 7352 obs. of  1 variable:<br>$ subjectid: int  1 1 1 1 1 1 1 1 1 1 ... </br></td>
 	</tr>
 	<tr>
-	 <td>test/X_test.txt</td>
-	 <td>FeatureTest
+	 <td><i>test/X_test.txt</i></td>
+	 <td><i>FeatureTest</i>
 	 <br>
 	 'data.frame':	2947 obs. of  561 variables: (extract below)
 	 <br>
@@ -73,8 +73,8 @@ dplyr
 	 </td>
 	</tr>
 	<tr>
-	 <td>train/X_train.txt</td>
-	 <td>FeatureTrain
+	 <td><i>train/X_train.txt</i></td>
+	 <td><i>FeatureTrain</i>
 	 <br>
 	 'data.frame':	7352 obs. of  561 variables: (extract below)
 	 <br>
@@ -91,8 +91,8 @@ dplyr
 	 </td>
 	</tr>
 	<tr>
-	 <td>test/y_test.txt</td>
-	 <td>ActivityTest
+	 <td><i>test/y_test.txt</i></td>
+	 <td><i>ActivityTest</i>
 	 <br>
 	 'data.frame':	2947 obs. of  1 variable:
 	 <br>
@@ -101,8 +101,8 @@ dplyr
 	 </td>
 	</tr>
 	<tr>
-	 <td>train/y_train.txt</td>
-	 <td>ActivityTrain
+	 <td><i>train/y_train.txt</i></td>
+	 <td><i>ActivityTrain</i>
 	 <br>
 	 'data.frame':	7352 obs. of  1 variable:
 	 <br>
@@ -115,10 +115,10 @@ dplyr
 
 						
 2. **Merge the single dataframes into one dataframe combining the subject id, the activity id and all the measurements of all the features.** This is done in three steps:
-   * Merge the Subject Test and Train datasets by row into the SubjectAll data frame
-   * Merge the Feature Test and Train datasets by row into the FeatureAll data frame
-   * Merge the Activity Test and Train datasets by row into the ActivityAll data frame
-   * Merge the SubjectAll, FeatureAll and ActivityAll datasets by column into the AllData data frame
+   * Merge the Subject Test and Train datasets by row into the <i>SubjectAll</i> data frame
+   * Merge the Feature Test and Train datasets by row into the <i>FeatureAll</i> data frame
+   * Merge the Activity Test and Train datasets by row into the <i>ActivityAll</i> data frame
+   * Merge the <i>SubjectAll</i>, <i>FeatureAll</i> and <i>ActivityAll</i> datasets by column into the <i>AllData</i> data frame
 
 <table>
   <tbody>
@@ -127,14 +127,14 @@ dplyr
       <th align="left">STRUCTURE</th>
     </tr>
     <tr>
-      <td>SubjectAll</td>
+      <td><i>SubjectAll</i></td>
       <td>'data.frame':	10299 obs. of  1 variable:
 	  <br>$ subjectid: int  2 2 2 2 2 2 2 2 2 2 ...	
 	  <br/>
 	  </td>
     </tr>
 	<tr>
-      <td>FeatureAll</td>
+      <td><i>FeatureAll</i></td>
       <td>'data.frame':	10299 obs. of  561 variables: (extract below)
 	  <br>
 	  $ tBodyAcc-mean()-X                   : num  0.257 0.286 0.275 0.27 0.275 ...
@@ -150,7 +150,7 @@ dplyr
 	  </td>
     </tr>
 	<tr>
-      <td>ActivityAll</td>
+      <td><i>ActivityAll</i></td>
       <td>'data.frame':	10299 obs. of  1 variable:
 	  <br>
       $ actcode: int  5 5 5 5 5 5 5 5 5 5 ...
@@ -158,7 +158,7 @@ dplyr
 	  </td>
     </tr>
 	<tr>
-      <td>AllData</td>
+      <td><i>AllData</i></td>
       <td>|'data.frame':	10299 obs. of  563 variables: (extract below)
 	  <br>
       $ subjectid                           : int  2 2 2 2 2 2 2 2 2 2 ...
@@ -182,7 +182,7 @@ dplyr
   				  
 
 3. **Extract only the measurements on the mean and standard deviation for each measurement.**
-   The TidyData data frame is a subset of the dataset AllData and contains the variables:
+   The <i>TidyData</i> data frame is a subset of the dataset AllData and contains the variables:
    * subjectid (identification of the subject)
    * actcode (activity code)
    * the measurement of the features that contain the expression "mean()" or "std()"
@@ -194,8 +194,8 @@ dplyr
       <th align="left">STRUCTURE</th>
     </tr>
     <tr>
-      <td>TidyData</td>
-      <td>Activity
+      <td><i>TidyData</i></td>
+      <td><i>Activity</i>
 	  <br>'data.frame':	10299 obs. of  68 variables: (extract below)
 	  $ subjectid                  : int  2 2 2 2 2 2 2 2 2 2 ...
 	  <br>
