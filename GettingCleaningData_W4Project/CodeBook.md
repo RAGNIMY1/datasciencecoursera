@@ -182,7 +182,7 @@ dplyr
   				  
 
 3. **Extract only the measurements on the mean and standard deviation for each measurement.**
-   The <i>TidyData</i> data frame is a subset of the dataset AllData and contains the variables:
+   The <i>TidyData</i> data frame is a subset of the dataset <i>AllData</i> and contains the variables:
    * subjectid (identification of the subject)
    * actcode (activity code)
    * the measurement of the features that contain the expression "mean()" or "std()"
@@ -195,8 +195,7 @@ dplyr
     </tr>
     <tr>
       <td><i>TidyData</i></td>
-      <td><i>Activity</i>
-	  <br>
+      <td>
      'data.frame':	10299 obs. of  68 variables: (extract below)
 	  <br>
       $ subjectid                  : int  2 2 2 2 2 2 2 2 2 2 ...
@@ -209,7 +208,7 @@ dplyr
 	  <br>
       $ tBodyAcc-mean()-Z          : num  -0.0147 -0.1191 -0.1182 -0.1175 -0.1295 ...
 	  <br/>
-	  </td>
+      </td>
     </tr>
 	<tr>
   </tbody>
