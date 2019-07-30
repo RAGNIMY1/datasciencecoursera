@@ -180,73 +180,73 @@ dplyr
 # TIDY DATASET STRUCTURE
   The output file has 180 rows and 68 columns.
   * Column 1 : subjectid = the identification of the test subject
-                |             values: 1..30
+    * values: 1..30
   * Column 2 : activity =  the type of activity performed when the corresponding measurements were taken 
-                |             values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+    * values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
   * Columns 3..68 : the measurement of the selected features
 	* timebodyaccelerometer-mean-x
 	* timebodyaccelerometer-mean-y
 	* timebodyaccelerometer-mean-z
 	* timegravityaccelerometer-mean-x
-				| 	timegravityaccelerometer-mean-y
-				| 	timegravityaccelerometer-mean-z
-				| 	timebodyaccelerometerjerk-mean-x
-				| 	timebodyaccelerometerjerk-mean-y
-				| 	timebodyaccelerometerjerk-mean-z
-				| 	timebodygyroscope-mean-x
-				| 	timebodygyroscope-mean-y
-				| 	timebodygyroscope-mean-z
-				| 	timebodygyroscopejerk-mean-x
-				| 	timebodygyroscopejerk-mean-y
-				| 	timebodygyroscopejerk-mean-z
-				| 	timebodyaccelerometermagnitude-mean
-				| 	timegravityaccelerometermagnitude-mean
-				| 	timebodyaccelerometerjerkmagnitude-mean
-				| 	timebodygyroscopemagnitude-mean
-				| 	timebodygyroscopejerkmagnitude-mean
-				| 	frequencybodyaccelerometer-mean-x
-				| 	frequencybodyaccelerometer-mean-y
-				| 	frequencybodyaccelerometer-mean-z
-				| 	frequencybodyaccelerometerjerk-mean-x
-				| 	frequencybodyaccelerometerjerk-mean-y
-				| 	frequencybodyaccelerometerjerk-mean-z
-				| 	frequencybodygyroscope-mean-x
-				| 	frequencybodygyroscope-mean-y
-				| 	frequencybodygyroscope-mean-z
-				| 	frequencybodyaccelerometermagnitude-mean
-				| 	frequencybodyaccelerometerjerkmagnitude-mean
-				| 	frequencybodygyroscopemagnitude-mean
-				| 	frequencybodygyroscopejerkmagnitude-mean
-				| 	timebodyaccelerometer-std-x
-				| 	timebodyaccelerometer-std-y
-				| 	timebodyaccelerometer-std-z
-				| 	timegravityaccelerometer-std-x
-				| 	timegravityaccelerometer-std-y
-				| 	timegravityaccelerometer-std-z
-				| 	timebodyaccelerometerjerk-std-x
-				| 	timebodyaccelerometerjerk-std-y
-				| 	timebodyaccelerometerjerk-std-z
-				| 	timebodygyroscope-std-x
-				| 	timebodygyroscope-std-y
-				| 	timebodygyroscope-std-z
-				| 	timebodygyroscopejerk-std-x
-				| 	timebodygyroscopejerk-std-y
-				| 	timebodygyroscopejerk-std-z
-				| 	timebodyaccelerometermagnitude-std
-				| 	timegravityaccelerometermagnitude-std
-				| 	timebodyaccelerometerjerkmagnitude-std
-				| 	timebodygyroscopemagnitude-std
-				| 	timebodygyroscopejerkmagnitude-std
-				| 	frequencybodyaccelerometer-std-x
-				| 	frequencybodyaccelerometer-std-y
-				| 	frequencybodyaccelerometer-std-z
-				| 	frequencybodyaccelerometerjerk-std-x
-				| 	frequencybodyaccelerometerjerk-std-y
-				| 	frequencybodyaccelerometerjerk-std-z
-				| 	frequencybodygyroscope-std-x
-				| 	frequencybodygyroscope-std-y
-				| 	frequencybodygyroscope-std-z
-				| 	frequencybodyaccelerometermagnitude-std
-				| 	frequencybodyaccelerometerjerkmagnitude-std
-				| 	frequencybodygyroscopemagnitude-std
-				| 	frequencybodygyroscopejerkmagnitude-std
+	* timegravityaccelerometer-mean-y
+	* timegravityaccelerometer-mean-z
+	* timebodyaccelerometerjerk-mean-x
+	* timebodyaccelerometerjerk-mean-y
+	* timebodyaccelerometerjerk-mean-z
+	* timebodygyroscope-mean-x
+	* timebodygyroscope-mean-y
+	* timebodygyroscope-mean-z
+	* timebodygyroscopejerk-mean-x
+	* timebodygyroscopejerk-mean-y
+	* timebodygyroscopejerk-mean-z
+	* timebodyaccelerometermagnitude-mean
+	* timegravityaccelerometermagnitude-mean
+	* timebodyaccelerometerjerkmagnitude-mean
+	* timebodygyroscopemagnitude-mean
+	* timebodygyroscopejerkmagnitude-mean
+	* frequencybodyaccelerometer-mean-x
+	* frequencybodyaccelerometer-mean-y
+	* frequencybodyaccelerometer-mean-z
+	* frequencybodyaccelerometerjerk-mean-x
+	* frequencybodyaccelerometerjerk-mean-y
+	* frequencybodyaccelerometerjerk-mean-z
+	* frequencybodygyroscope-mean-x
+	* frequencybodygyroscope-mean-y
+	* frequencybodygyroscope-mean-z
+	* frequencybodyaccelerometermagnitude-mean
+	* frequencybodyaccelerometerjerkmagnitude-mean
+	* frequencybodygyroscopemagnitude-mean
+	* frequencybodygyroscopejerkmagnitude-mean
+	* timebodyaccelerometer-std-x
+	* timebodyaccelerometer-std-y
+	* timebodyaccelerometer-std-z
+	* timegravityaccelerometer-std-x
+	* timegravityaccelerometer-std-y
+	* timegravityaccelerometer-std-z
+	* timebodyaccelerometerjerk-std-x
+	* timebodyaccelerometerjerk-std-y
+	* timebodyaccelerometerjerk-std-z
+	* timebodygyroscope-std-x
+	* timebodygyroscope-std-y
+	* timebodygyroscope-std-z
+	* timebodygyroscopejerk-std-x
+	* timebodygyroscopejerk-std-y
+	* timebodygyroscopejerk-std-z
+	* timebodyaccelerometermagnitude-std
+	* timegravityaccelerometermagnitude-std
+	* timebodyaccelerometerjerkmagnitude-std
+	* timebodygyroscopemagnitude-std
+	* timebodygyroscopejerkmagnitude-std
+	* frequencybodyaccelerometer-std-x
+	* frequencybodyaccelerometer-std-y
+	* frequencybodyaccelerometer-std-z
+	* frequencybodyaccelerometerjerk-std-x
+	* frequencybodyaccelerometerjerk-std-y
+	* frequencybodyaccelerometerjerk-std-z
+	* frequencybodygyroscope-std-x
+	* frequencybodygyroscope-std-y
+	* frequencybodygyroscope-std-z
+	* frequencybodyaccelerometermagnitude-std
+	* frequencybodyaccelerometerjerkmagnitude-std
+	* frequencybodygyroscopemagnitude-std
+	* frequencybodygyroscopejerkmagnitude-std
