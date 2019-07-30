@@ -4,14 +4,15 @@ __CODE BOOK__
 # RAW DATA
 The data used for the project is collected from the sensor signals (accelerometer and gyroscope) of the Samsung Galaxy S smartphone carried by 30 volunteers (aka subjects) performing activities like walking, laying, staying....
 The obtained dataset has been randomly partitioned into two sets, generating the training data and the test data.
-Location | https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-Description | http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+* Location : https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+* Description : http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 The following files, extracted from the zipped raw dataset, are used in the data transformation process:
-FILE NAME               | SHORT DESCRIPTION                                                                            | DIMENSION
------------------------ | -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------
-activity_labels.txt     | list of activities performed by the subjects                                                 | 6 obd. 2 variables (activity code [1..6], activity name [WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING])
-features.txt            | labels of the 3-axial linear acceleration and 3-axial angular velocity measurements          | 561 obs. 2 variables (feature id, feature name)
+
+FILE NAME | SHORT DESCRIPTION | DIMENSION
+--------- | ----------------- | ---------
+activity_labels.txt | list of activities performed by the subjects | 6 obd. 2 variables (activity code [1..6], activity name [WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING])
+features.txt | labels of the 3-axial linear acceleration and 3-axial angular velocity measurements          | 561 obs. 2 variables (feature id, feature name)
 test/subject_test.txt   | contains the identification of the subjects for the experiments reported in the test dataset | 2947 obs. 1 variable (subject id)
 train/subject_train.txt | contains the identification of the subjects for the experiments reported in the train dataset| 7352 obs. 1 variable (subject id)
 test/X_test.txt         | contains the measurements by feature for the experiments reported in the test dataset        | 2947 obs. 561 variables (1 variable by feature)
@@ -27,21 +28,31 @@ dplyr
 ## PROCESS STEPS
 
 1. Preparation
-   * Set the working environment
-   * Download and unzip the raw datafile
-   * Read all the files used in the transformation process and load the data into single data frames
-     FILE NAME               |DATA FRAME NAME AND STRUCTURE              
-     ----------------------- | ----------------------------------------------------------------------------------------------------------------
-     activity_labels.txt     |Activity 
-                             |'data.frame':	6 obs. of  2 variables:  
-                             |$ activity: Factor w/ 6 levels "LAYING","SITTING",..: 4 6 5 2 3 1
-     features.txt            |Featuredata
-                             |data.frame':	561 obs. of  2 variables:
-                             |$ featureid: int  1 2 3 4 5 6 7 8 9 10 ...
-                             |$ feature  : Factor w/ 477 levels "angle(tBodyAccJerkMean),gravityMean)",..: 243 244 245 250 251 252 237 238 239 240 ...						
-     test/subject_test.txt   |SubjectTest
-                             |'data.frame':	2947 obs. of  1 variable:
-                             |$ subjectid: int  2 2 2 2 2 2 2 2 2 2 ...  
+ * Set the working environment
+ * Download and unzip the raw datafile
+ * Read all the files used in the transformation process and load the data into single data frames
+ 
+ <table>
+  <tbody>
+    <tr>
+      <th>FILE NAME</th>
+      <th>DATA FRAME NAME AND STRUCTURE</th>
+    </tr>
+    <tr>
+      <td>activity_labels.txt</td>
+      <td>Activity<br>6 obs. of  2 variables: <br>$ activity: Factor w/ 6 levels "LAYING","SITTING",..: 4 6 5 2 3 1<br/><br/></td>
+    </tr>
+	<tr>
+      <td>features.txt</td>
+      <td>Featuredata<br>'data.frame':	561 obs. of  2 variables: <br>$ featureid: int  1 2 3 4 5 6 7 8 9 10 ...<br>$ feature  : Factor w/ 477 levels "angle(tBodyAccJerkMean),gravityMean)",..: 243 244 245 250 251 252 237 238 239 240 ...	<br/></td>
+    </tr>
+    <tr>
+      <td>test/subject_test.txt</td>
+      <td>SubjectTest<br>'data.frame':	2947 obs. of  1 variable:<br>$ subjectid: int  2 2 2 2 2 2 2 2 2 2 ...  <br/></td>
+    </tr>
+  </tbody>
+</table>
+   
      subject_train.txt       |SubjectTrain
                              |'data.frame':	7352 obs. of  1 variable:
                              |$ subjectid: int  1 1 1 1 1 1 1 1 1 1 ...	
@@ -202,5 +213,3 @@ dplyr
 				| 	frequencybodyaccelerometerjerkmagnitude-std
 				| 	frequencybodygyroscopemagnitude-std
 				| 	frequencybodygyroscopejerkmagnitude-std
-
-								
