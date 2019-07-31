@@ -240,7 +240,7 @@ dplyr
    Finally the data is exported to a txt file.
 
 # TIDY DATASET STRUCTURE
-  The output file has 180 rows and 68 columns.
+  The output file 'CleanData.txt' has 180 rows and 68 columns.
   * Column 1 : subjectid = the identification of the test subject
     * values: 1..30
   * Column 2 : activity =  the type of activity performed when the corresponding measurements were taken 
