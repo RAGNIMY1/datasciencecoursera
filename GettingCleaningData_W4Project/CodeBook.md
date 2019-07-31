@@ -219,7 +219,7 @@ dplyr
 
 4. **Replace the activity codes by descriptive activity names read from the "activity_labels.txt" (Activity data frame)**
 
-5. **Label the data set with descriptive variable names**
+5. **Label the data set with descriptive variable names.**
    I've applied the following best practices:
    * Convert all variable names to lower case.
    * Make variable names human readable, reflecting the content.
@@ -235,7 +235,7 @@ dplyr
    * mag was replaced by magnitude
    * actcode was replaced by activity
 
-6. Based on the data frame created in step 5., create an independent tidy data set with the average of each variable for each activity and each subject
+6. Based on the data frame created in step 5., **create an independent tidy data set with the average of each variable for each activity and each subject.**
    The final tidy dataset is obtained by calculating the average for all feature columns by subject and activity - this is achieved with the summarize_all and group_by functions.
    Finally the data is exported to a txt file.
 
