@@ -40,7 +40,10 @@ dplyr
     </tr>
     <tr>
       <td><i>activity_labels.txt</i></td>
-      <td><i>Activity</i><br>6 obs. of  2 variables: <br>$ activity: Factor w/ 6 levels "LAYING","SITTING",..: 4 6 5 2 3 1<br/></td>
+      <td><i>Activity</i><br>'data.frame':	6 obs. of  2 variables:
+      <br>  $ actcode : int  1 2 3 4 5 6
+      <br>$ activity: Factor w/ 6 levels "LAYING","SITTING",..: 4 6 5 2 3 1
+      <br/></td>
     </tr>
     <tr>
       <td><i>features.txt</i></td>
